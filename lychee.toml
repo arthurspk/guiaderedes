@@ -1,0 +1,8 @@
+# Configuração do verificador de links (https://github.com/lycheeverse/lychee)
+# Uso: lychee --no-progress './**/*.md'
+#
+# O LinkedIn (999), a Catho (403) e o Indeed (403) respondem com bloqueio anti-bot a
+# qualquer verificador automatizado, mesmo com a página no ar (confirmado manualmente
+# com curl e user-agent de navegador nesta sessão: todos responderam 200). São os
+# únicos domínios excluídos da verificação.
+exclude = ["^https://www\\.linkedin\\.com/", "^https://www\\.catho\\.com\\.br/", "^https://br\\.indeed\\.com/"]
